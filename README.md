@@ -1,4 +1,4 @@
-# Fi Thnity - يقيرط يف (On My Way)
+# Fi Thnity  (On My Way)
 
 **Save Time, Save Tunisia** - A community-driven carpooling and ride-sharing application for Tunisia.
 
@@ -136,4 +136,4 @@ Developed at ESPRIT - École Supérieure Privée d'Ingénierie et de Technologie
 
 ---
 
-**يقيرط يف - On My Way** 🇹🇳
+** On My Way** 🇹🇳
