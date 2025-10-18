@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.BroadcastRideActivity">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:navigationIcon="@android:drawable/ic_menu_revert"
+            app:navigationIconTint="@android:color/white"
+            app:title="@string/broadcast_ride"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Ride Type Info -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardRideTypeInfo"
+                style="@style/Widget.FiThnity.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:id="@+id/tvRideTypeInfo"
+                    style="@style/TextAppearance.FiThnity.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/i_need_ride"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Origin Location Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardOrigin"
+                style="@style/Widget.FiThnity.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/origin"
+                            android:src="@android:drawable/ic_menu_mylocation"
+                            android:tint="@color/primary" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.FiThnity.Caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/origin"
+                                android:textColor="@color/text_secondary"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvOriginAddress"
+                                style="@style/TextAppearance.FiThnity.Body1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/tap_to_select"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/select_pickup"
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:tint="@color/text_hint" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Destination Location Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDestination"
+                style="@style/Widget.FiThnity.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/destination"
+                            android:src="@android:drawable/ic_dialog_map"
+                            android:tint="@color/accent" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.FiThnity.Caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/destination"
+                                android:textColor="@color/text_secondary"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDestinationAddress"
+                                style="@style/TextAppearance.FiThnity.Body1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/tap_to_select"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/select_dropoff"
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:tint="@color/text_hint" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Transport Type Section -->
+            <TextView
+                style="@style/TextAppearance.FiThnity.Headline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/select_transport"
+                android:textColor="@color/text_primary" />
+
+            <!-- Transport Type Chips -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="8dp"
+                app:selectionRequired="false"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTaxi"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:checkable="true"
+                    android:minHeight="48dp"
+                    android:text="🚖 Taxi"
+                    android:textSize="16sp"
+                    app:chipBackgroundColor="@color/surface"
+                    app:chipStrokeColor="@color/primary"
+                    app:chipStrokeWidth="2dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTaxiCollectif"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:checkable="true"
+                    android:minHeight="48dp"
+                    android:text="🚐 Taxi Collectif"
+                    android:textSize="16sp"
+                    app:chipBackgroundColor="@color/surface"
+                    app:chipStrokeColor="@color/primary"
+                    app:chipStrokeWidth="2dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPrivateCar"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:checkable="true"
+                    android:minHeight="48dp"
+                    android:text="🚗 Private Car"
+                    android:textSize="16sp"
+                    app:chipBackgroundColor="@color/surface"
+                    app:chipStrokeColor="@color/primary"
+                    app:chipStrokeWidth="2dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMetro"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:checkable="true"
+                    android:minHeight="48dp"
+                    android:text="🚇 Metro"
+                    android:textSize="16sp"
+                    app:chipBackgroundColor="@color/surface"
+                    app:chipStrokeColor="@color/primary"
+                    app:chipStrokeWidth="2dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipBus"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:checkable="true"
+                    android:minHeight="48dp"
+                    android:text="🚌 Bus"
+                    android:textSize="16sp"
+                    app:chipBackgroundColor="@color/surface"
+                    app:chipStrokeColor="@color/primary"
+                    app:chipStrokeWidth="2dp" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- Seat Selection Card (only for shareable transport) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSeatSelection"
+                style="@style/Widget.FiThnity.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        style="@style/TextAppearance.FiThnity.Headline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available_seats"
+                        android:textColor="@color/text_primary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDecrease"
+                            style="@style/Widget.Material3.Button.Icon"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="−"
+                            android:textSize="24sp"
+                            app:cornerRadius="28dp"
+                            app:icon="@null"
+                            app:strokeColor="@color/primary"
+                            app:strokeWidth="2dp" />
+
+                        <TextView
+                            android:id="@+id/tvSeatCount"
+                            style="@style/TextAppearance.FiThnity.Headline1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/primary"
+                            android:textSize="48sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnIncrease"
+                            style="@style/Widget.Material3.Button.Icon"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="+"
+                            android:textSize="24sp"
+                            app:cornerRadius="28dp"
+                            app:icon="@null"
+                            app:strokeColor="@color/primary"
+                            app:strokeWidth="2dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvMaxSeats"
+                        style="@style/TextAppearance.FiThnity.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Max: 4 seats"
+                        android:textColor="@color/text_hint" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Broadcast Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBroadcast"
+                style="@style/Widget.FiThnity.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="64dp"
+                android:text="@string/broadcast"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconGravity="textStart"
+                app:iconSize="24dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

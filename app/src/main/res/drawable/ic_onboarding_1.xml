@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for Onboarding Screen 1: Share Your Journey -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Car Icon -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M60,100 L140,100 L150,120 L50,120 Z M50,120 L50,140 L150,140 L150,120 M65,130 A8,8 0 1,1 65,130 M135,130 A8,8 0 1,1 135,130" />
+
+    <!-- Road -->
+    <path
+        android:fillColor="@color/text_hint"
+        android:pathData="M0,150 L200,150 L200,160 L0,160 Z" />
+</vector>

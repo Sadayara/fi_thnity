@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Colors - New Fi Thnity Palette -->
+    <!-- Primary: Bleu Saphir Tunisien - Évoque la mer Méditerranée et la confiance -->
+    <color name="primary">#006D9C</color>
+    <color name="primary_dark">#004F73</color>
+    <color name="primary_light">#3399C6</color>
+
+    <!-- Secondary: Jaune Sable du Sahel - Rappelle le soleil et l'énergie positive -->
+    <color name="secondary">#FFD54F</color>
+    <color name="secondary_dark">#FFC107</color>
+    <color name="secondary_light">#FFE57F</color>
+
+    <!-- Accent: Rouge Médina - Clin d'œil au drapeau tunisien -->
+    <color name="accent">#D62828</color>
+    <color name="accent_dark">#A61F1F</color>
+    <color name="accent_light">#E85858</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F9F9F9</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E1E1E</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <!-- Transport Type Colors -->
+    <color name="taxi_color">#FFD54F</color>
+    <color name="taxi_collectif_color">#FF9800</color>
+    <color name="private_car_color">#006D9C</color>
+    <color name="metro_color">#2196F3</color>
+    <color name="bus_color">#9C27B0</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="online">#4CAF50</color>
+    <color name="error">#E53935</color>
+    <color name="warning">#FF9800</color>
+    <color name="info">#006D9C</color>
+
+    <!-- Additional UI Colors -->
+    <color name="divider">#E0E0E0</color>
+    <color name="overlay">#80000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
